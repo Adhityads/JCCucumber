@@ -40,7 +40,7 @@ public class TestRecruitment {
     @When("User search hiring by manager")
     public void user_search_hiring_by_manager(){
         recruitmentPage.searchByHiringManager();
-        Hooks.delay(3);
+        Hooks.delay(1);
         recruitmentPage.btnSearchByHiringManager();
         extentTest.log(LogStatus.PASS,"User Searching hiring by manager");
     }
