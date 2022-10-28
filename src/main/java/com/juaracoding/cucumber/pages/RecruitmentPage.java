@@ -1,6 +1,7 @@
 package com.juaracoding.cucumber.pages;
 
 import com.juaracoding.cucumber.drivers.DriverSingleton;
+import org.jsoup.select.Evaluator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -42,6 +43,7 @@ public class RecruitmentPage {
     }
 
     public void searchByHiringManager(){
+        selectHiringManager.click();
         selectHiringManager.sendKeys("L");
     }
 
