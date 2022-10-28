@@ -40,7 +40,7 @@ public class RecruitmentPage {
     }
 
     public void searchByHiringManager(){
-        selectHiringManager.sendKeys("Li");
+        selectHiringManager.sendKeys("L");
     }
 
     public void btnSearchByHiringManager(){
