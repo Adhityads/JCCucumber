@@ -42,7 +42,7 @@ public class RecruitmentPage {
         return txtRecruitment.getText();
     }
 
-    public void searchByHiringManager(){l
+    public void searchByHiringManager(){
         selectHiringManager.sendKeys("Linda");
     }
 
