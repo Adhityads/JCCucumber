@@ -42,9 +42,8 @@ public class RecruitmentPage {
         return txtRecruitment.getText();
     }
 
-    public void searchByHiringManager(){
-        selectHiringManager.click();
-        selectHiringManager.sendKeys("L");
+    public void searchByHiringManager(){l
+        selectHiringManager.sendKeys("Linda");
     }
 
     public void btnSearchByHiringManager(){
