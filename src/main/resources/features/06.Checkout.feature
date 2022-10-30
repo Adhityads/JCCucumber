@@ -1,7 +1,8 @@
 Feature: Checkout
 
   Scenario: User Checkout
-    When User go to checkout menu
+    When User go to menu
+    And User go to checkout menu
     And User fill form name
     And User fill form location
     And User check button terms

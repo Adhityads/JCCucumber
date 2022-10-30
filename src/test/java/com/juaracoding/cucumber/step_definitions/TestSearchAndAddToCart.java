@@ -22,6 +22,7 @@ public class TestSearchAndAddToCart {
 
     @When("User Search item satu")
     public void user_search_item_satu(){
+        Hooks.scroll(200);
         searchAndAddToCart.search("shirt");
         extentTest.log(LogStatus.PASS,"User search item satu");
     }
@@ -61,6 +62,7 @@ public class TestSearchAndAddToCart {
 
     @When("User Search item dua")
     public void user_search_item_dua(){
+        Hooks.scroll(200);
         searchAndAddToCart.search("dress");
         extentTest.log(LogStatus.PASS,"User search item dua");
     }

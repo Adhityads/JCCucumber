@@ -1,6 +1,7 @@
 package com.juaracoding.cucumber.pages;
 
 import com.juaracoding.cucumber.drivers.DriverSingleton;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,7 +17,7 @@ public class Checkout {
     }
     @FindBy(xpath = "//a[@class='custom-logo-link']//img[@alt='ToolsQA Demo Site']")
     WebElement btnMenu;
-    @FindBy(xpath = "//a[contains(text(),'Checkout')]")
+    @FindBy(xpath = "//*[@id=\"noo-site\"]/header/div[1]/div/ul[2]/li[3]/a")
     WebElement btnCheckout;
     @FindBy(xpath = "//*[@id=\"billing_first_name\"]")
     WebElement firstname;
@@ -48,7 +49,8 @@ public class Checkout {
         btnMenu.click();
     }
     public void checkout(){
-        btnCheckout.click();
+        JavascriptExecutor js = (JavascriptExecutor)driver;
+        js.executeScript("arguments[0].click();", btnCheckout);
     }
     public void name(){
         firstname.sendKeys("dhitty");

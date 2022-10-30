@@ -19,10 +19,15 @@ public class TestChekout {
         driver = Hooks.driver;
         extentTest = Hooks.extentTest;
     }
-    @When("User go to checkout menu")
-    public void user_go_to_checkout_menu(){
+
+    @When("User go to menu")
+    public void user_go_to_menu(){
+        Hooks.scroll(200);
         checkout.menu();
-        Hooks.scroll(300);
+        extentTest.log(LogStatus.PASS,"User go to menu");
+    }
+    @And("User go to checkout menu")
+    public void user_go_to_checkout_menu(){
         checkout.checkout();
         extentTest.log(LogStatus.PASS,"User go to checkout menu");
     }
