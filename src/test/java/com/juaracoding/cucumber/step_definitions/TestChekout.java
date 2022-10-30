@@ -45,6 +45,7 @@ public class TestChekout {
     }
     @And("User check button terms")
     public void user_check_button_terms(){
+        Hooks.scroll(200);
         checkout.checkBox();
         extentTest.log(LogStatus.PASS,"User click button terms");
     }
