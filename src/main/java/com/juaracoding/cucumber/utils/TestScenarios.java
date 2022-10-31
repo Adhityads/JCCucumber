@@ -2,11 +2,11 @@ package com.juaracoding.cucumber.utils;
 
 public enum TestScenarios {
 
-    T1("User invalid login"),
-    T2("User valid login"),
-    T3("Dashboard user function"),
-    T4("Recruitment user function"),
-    T5("Search hiring by manager"),
+//    T1("User invalid login"),
+//    T2("User valid login"),
+//    T3("Dashboard user function"),
+//    T4("Recruitment user function"),
+//    T5("Search hiring by manager"),
     T6("User login"),
     T7("User search item satu"),
     T8("User User add to cart item satu"),
